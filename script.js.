@@ -1,9 +1,0 @@
-const colors = ["#ff7eb3", "#ff758f", "#ff9a8b", "#ff6f61", "#ff4f4f"];
-let currentColorIndex = 0;
-
-function changeBackground() {
-    document.body.style.background = `linear-gradient(45deg, ${colors[currentColorIndex]}, ${colors[(currentColorIndex + 1) % colors.length]})`;
-    currentColorIndex = (currentColorIndex + 1) % colors.length;
-}
-
-setInterval(changeBackground, 3000);
